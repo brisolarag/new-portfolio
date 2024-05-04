@@ -1,0 +1,66 @@
+<div class="workexperiences-view" id="exp">
+    <div class="workexperiences-content">
+      <h2 style="font-family: 'Nourd-Heavy', sans-serif; font-size: 2em;">Experiences</h2>
+      <div class="exps-items" style="background-color: white; border: 1px solid;padding: 20px;border-radius: 10px;">
+        @if (expStatus == 4) {
+          <div class="exp-item">
+            <div class="changeexp-btn">
+              <a (click)="changeN(1)" style="cursor: pointer;"><i class="bi bi-1-circle-fill"></i></a>
+              <a (click)="changeN(2)" style="cursor: pointer;"><i class="bi bi-2-circle-fill"></i></a>
+              <a (click)="changeN(3)" style="cursor: pointer;"><i class="bi bi-3-circle-fill"></i></a>
+              <a (click)="changeN(4)" style="cursor: pointer;color: red;"><i class="bi bi-4-circle-fill"></i></a>
+            </div>
+            <p>feb/22 - dec/23</p>
+            <h3>Formed Reserve Officer</h3>
+            <p>Brazilian Army - Porto Alegre/RS</p>
+            <p>Ten month training to become a Officer. Trained since the leadership, to the group work.</p>
+          </div>
+        }
+        @else if (expStatus == 3) {
+          <div class="exp-item">
+            <div class="changeexp-btn">
+              <a (click)="changeN(1)" style="cursor: pointer;"><i class="bi bi-1-circle-fill"></i></a>
+              <a (click)="changeN(2)" style="cursor: pointer;"><i class="bi bi-2-circle-fill"></i></a>
+              <a (click)="changeN(3)" style="cursor: pointer;color: red;"><i class="bi bi-3-circle-fill"></i></a>
+              <a (click)="changeN(4)" style="cursor: pointer;"><i class="bi bi-4-circle-fill"></i></a>
+            </div>
+            <p>mar/22 - sep/23</p>
+            <h3>Intern at Didatic Lab</h3>
+            <p>PUCRS - Porto Alegre/RS</p>
+            <p>Schedule rooms for the teachers, to pyshical experiments. Maintain the materials for the experiments, and help other students to their semester work.</p>
+          </div>
+        }
+        @else if (expStatus == 2) {
+          <div class="exp-item">
+            <div class="changeexp-btn">
+              <a (click)="changeN(1)" style="cursor: pointer;"><i class="bi bi-1-circle-fill"></i></a>
+              <a (click)="changeN(2)" style="cursor: pointer;color: red;"><i class="bi bi-2-circle-fill"></i></a>
+              <a (click)="changeN(3)" style="cursor: pointer;"><i class="bi bi-3-circle-fill"></i></a>
+              <a (click)="changeN(4)" style="cursor: pointer;"><i class="bi bi-4-circle-fill"></i></a>
+            </div>
+            <p>nov/22 - apr/23</p>
+            <h3>Document Analyst</h3>
+            <p>Makter Equipamentos LTDA - Canoas/RS</p>
+            <p>Responsable for doing spreadsheets to manage the stock control and send financal reports of the company. Also made all the manuals for the pavement machines, and made
+              a new web system to search for files.</p>
+          </div>
+        } @else {
+          <div class="exp-item">
+            <div class="changeexp-btn">
+              <a (click)="changeN(1)" style="cursor: pointer;color: red;"><i class="bi bi-1-circle-fill"></i></a>
+              <a (click)="changeN(2)" style="cursor: pointer;"><i class="bi bi-2-circle-fill"></i></a>
+              <a (click)="changeN(3)" style="cursor: pointer;"><i class="bi bi-3-circle-fill"></i></a>
+              <a (click)="changeN(4)" style="cursor: pointer;"><i class="bi bi-4-circle-fill"></i></a>
+            </div>
+            <p>may/24 - <span style="font-weight: bolder;color: red;">working now</span></p>
+            <h3>Dell IT Academy Intern</h3>
+            <p>PUCRS - Porto Alegre/RS</p>
+            <p>In partnership with PUCRS, I'm being trained in such topics as C#, ASP.NET Core, MVC Razr, SQL Server, EF Core, JS, TS. And later in the future I'll be starting a development and
+              I will be part of a team to work in Eldorado.
+            </p>
+          </div>
+        }
+      </div>
+  
+    </div>
+  </div>

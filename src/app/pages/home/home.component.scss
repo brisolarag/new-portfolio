@@ -1,0 +1,77 @@
+.homepage-view {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../../assets/homepage/background-home.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.homepage-content {
+    width: 80vw;
+    height: 600px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-title {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+
+    font-family: 'Nourd-Regular', sans-serif;
+    font-size: 2.8rem;
+    color: #000;
+
+}
+
+.box-title-content {
+    width: 10px;   
+}
+
+
+.box-name-and-buttons {
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-nb-content {
+    --tam-texto: 200px;
+    height: 150px;
+    img {
+        height: 100%;
+        width: auto;
+        margin-right: 30px;
+    }
+
+    h1 {
+        font-family: 'Nourd-Regular',sans-serif;
+        font-size: 300%;
+    }
+
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 990px) {
+    .homepage-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .box-title-content {
+            font-size: 1.5rem;
+            width: fit-content;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Nourd-Regular';
+    src: url('../src/assets/fonts/Nourd/nourd_regular.ttf');
+}
+@font-face {
+    font-family: 'Nourd-Light';
+    src: url('../src/assets/fonts/Nourd/nourd_light.ttf');
+}
+@font-face {
+    font-family: 'Nourd-Medium';
+    src: url('../src/assets/fonts/Nourd/nourd_medium.ttf');
+}
+@font-face {
+    font-family: 'Nourd-Semi-Bold';
+    src: url('../src/assets/fonts/Nourd/nourd_semi_bold.ttf');
+}
+@font-face {
+    font-family: 'Nourd-Bold';
+    src: url('../src/assets/fonts/Nourd/nourd_bold.ttf');
+}
+@font-face {
+    font-family: 'Nourd-Heavy';
+    src: url('../src/assets/fonts/Nourd/nourd_heavy.ttf');
+}
+
+body {
+    font-family: 'Nourd-Regular', sans-serif;
+    overflow-x: hidden;
+}

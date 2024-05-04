@@ -1,0 +1,83 @@
+[
+    {
+        "id": 0,
+        "date": "2022-01-10T00:00:00Z",
+        "name": "Internships at PUCRS (Automatition)",
+        "desc": "This was a automation that I developed with Python to get all the opportunities in my university.",
+        "link": ""
+    },
+    {
+        "id": 1,
+        "date": "2022-04-10T00:00:00Z",
+        "name": "Login System (API)",
+        "desc": "I was studying about tokens and Nodejs, than I developed this login system to use in a TodoList app.",
+        "link": ""
+    },
+    {
+        "id": 2,
+        "date": "2022-05-10T00:00:00Z",
+        "name": "Chrome Track (Extension)",
+        "desc": "This is a extension created to Chrome, using Link&Track api. With this extension you can track your ships directly from the browser.",
+        "link": ""
+    },
+    {
+        "id": 3,
+        "date": "2022-05-11T00:00:00Z",
+        "name": "TodoList (View)",
+        "desc": "A page to add, edit and delete things to do daily. I did to practice my front end, than I used the api that I developed previously.",
+        "link": ""
+    },
+    {
+        "id": 4,
+        "date": "2023-01-10T00:00:00Z",
+        "name": "TRemover (Windows)",
+        "desc": "When I was younger, I use to optimize some computers to make some money, most of the time for better results in gaming, and then I decided to create this solution where it deletes and cleans the computer. It saved some time for me.",
+        "link": ""
+    },
+    {
+        "id": 5,
+        "date": "2023-03-10T00:00:00Z",
+        "name": "Portfolio Messages (API)",
+        "desc": "This is a simple api that I developed to get acess to my portfolio messages, since I had a form to send messages in a previously version of my portfolio.",
+        "link": ""
+    },
+    {
+        "id": 6,
+        "date": "2023-09-10T00:00:00Z",
+        "name": "BrainRest (Windows)",
+        "desc": "A pomodoro timer with stats to study, developed with C#, using WinForms, its funny because I still use this app to study.",
+        "link": ""
+    },
+    {
+        "id": 7,
+        "date": "2024-01-10T00:00:00Z",
+        "name": "Filmes (API)",
+        "desc": "This was a test to work for a company that suddently I didn't passed, where it was a simple api CRUD with the data of films, like title, duration and actors.",
+        "link": ""
+    },
+    {
+        "id": 8,
+        "date": "2024-01-11T00:00:00Z",
+        "name": "Portfolio (Personal Project)",
+        "desc": "At this time I finally finished the first version of my portfolio, where I did updated all more 3 times, I started doing all with HTML, CSS and JS, than I migrated to React later and than Angular.",
+        "link": ""
+    },
+    {
+        "id": 9,
+        "date": "2024-02-10T00:00:00Z",
+        "name": "Solving Algorithms (Channel on Tiktok)",
+        "desc": "I started my channel on Tiktok, where I solve algorithms, and post the solution on the channel. I started doing this because I like to discuss and share information, and also because I think that I learn more when I'm teaching someone.",
+        "link": ""
+    },
+    {
+        "id": 10,
+        "date": "2024-04-10T00:00:00Z",
+        "name": "Raffle App (Dell IT Academy 2024)",
+        "desc": "This was the application that got me into the Dell IT Academy, where it was proposed to create an application that simulates a raffle, like Mega Senna, where the user could send numbers, and if all the numbers sorted in the round does matches with the user's numbers, he wins the round. There are a lot of funcionalities in this app, there's a login, to use the application as an administrator and start the rounds and more. There's also a funcionality where it keeps sorting numbers until someone wins the round or reaches 30 numbers sorted, and then no one wins the round. The app does generates a PDF prize to the winner. It was all done with ASP.NET with EF Core, and Angular, theres also a docker compose to run all it once.",
+        "link": ""
+    }
+
+
+
+    
+]

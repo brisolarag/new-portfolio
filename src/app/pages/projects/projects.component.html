@@ -1,0 +1,19 @@
+<div class="projects-view" id="prjs">
+
+    <div class="projects-content">
+        <h2 style="font-family: 'Nourd-Heavy', sans-serif; font-size: 2em;">Projects</h2>
+        <div class="projects-box" style="background-color: white;border: 1px solid;padding: 10px;">
+            
+            @for (project of projects; track project.id) {
+                <div class="project">
+                    <p style="margin: 0;">{{formatDate(project.date)}}</p>
+                    <p><a style="font-weight: bolder;margin-top: 0;text-decoration: none;" target="_blank" href={{project.link}}>{{project.name}}</a></p>
+                    <p>{{project.desc}}</p>
+                    <p>{{project.link}}</p>
+                </div>
+            }
+
+        </div>
+    </div>
+
+</div>
