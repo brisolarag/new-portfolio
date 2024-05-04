@@ -1,4 +1,4 @@
-.workexperiences-view {
+.skills-view {
     box-sizing: border-box;
     width: 100vw;
     height: 100vh;
@@ -11,7 +11,7 @@
     background-color: #FDFDFD;
 }
 
-.workexperiences-content {
+.skills-content {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -20,20 +20,4 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.exps-items {
-    width: 80vw;
-    height: 300px;
-}
-
-.exp-item {
-    width: 100%;
-    height: 100%;
-}
-
-.changeexp-btn {
-    display: flex;
-    flex-direction: row;
-    font-size: 2rem;
 }

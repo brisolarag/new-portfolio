@@ -1,0 +1,106 @@
+[
+    {
+        "id": 0,
+        "name": "Excel and VBA from beginner to advanced",
+        "location": "Hotmart",
+        "author": "/ Expertt Cursos Online",
+        "date": "2020-12-10T00:00:00Z",
+        "status": "done"
+    },
+    {
+        "id": 1,
+        "name": "Python 3 from beginner to advanced",
+        "location": "Udemy",
+        "author": "/ Luiz Otavio Miranda",
+        "date": "2021-01-10T00:00:00Z",
+        "status": "done"
+    },
+    {
+        "id": 2,
+        "name": "Complete 2021 Development Bootcamp",
+        "location": "Udemy",
+        "author": "/ Dr.Angela Yu",
+        "date": "2021-02-10T00:00:00Z",
+        "status": "done"
+    },
+    {
+        "id": 3,
+        "name": "Javascript",
+        "location": "Udemy",
+        "author": "/ Andrei Neagoie",
+        "date": "2021-06-10T00:00:00Z",
+        "status": "done"
+    },
+    {
+        "id": 4,
+        "name": "Complete Modern Web JS + TS",
+        "location": "Udemy",
+        "author": "/ Cod3r",
+        "date": "2021-09-10T00:00:00Z",
+        "status": "done"
+    },
+    {
+        "id": 5,
+        "name": "Git e Github",
+        "location": "Alura",
+        "author": "",
+        "date": "2022-01-10T00:00:00Z",
+        "status": "done"
+    },
+    {
+        "id": 6,
+        "name": "Understanding HTTP",
+        "location": "Alura",
+        "author": "",
+        "date": "2022-03-10T00:00:00Z",
+        "status": "done"
+    },
+    {
+        "id": 7,
+        "name": "C# OOP",
+        "location": "Alura",
+        "author": "",
+        "date": "2022-07-10T00:00:00Z",
+        "status": "done"
+    },
+    {
+        "id": 8,
+        "name": "C# OOP",
+        "location": "Udemy",
+        "author": "/ Oak Academy",
+        "date": "2022-11-10T00:00:00Z",
+        "status": "done"
+    },
+    {
+        "id": 9,
+        "name": "Postgree SQL",
+        "location": "Alura",
+        "author": "",
+        "date": "2022-12-10T00:00:00Z",
+        "status": "done"
+    },
+    {
+        "id": 10,
+        "name": "Java Swing Desktop App",
+        "location": "Alura",
+        "author": "",
+        "date": "2022-12-11T00:00:00Z",
+        "status": "doing"
+    },
+    {
+        "id": 11,
+        "name": ".NET All Courses",
+        "location": "Alura",
+        "author": "",
+        "date": "2023-04-10T00:00:00Z",
+        "status": "done"
+    },
+    {
+        "id": 12,
+        "name": ".NET MAUI",
+        "location": "Udemy",
+        "author": "/ Elias Ribeiro",
+        "date": "2024-03-10T00:00:00Z",
+        "status": "doing"
+    }
+]

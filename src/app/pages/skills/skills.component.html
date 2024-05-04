@@ -1,0 +1,28 @@
+<div class="skills-view" id="sklls">
+
+    <div class="skills-content">
+        <h2 style="font-family: 'Nourd-Heavy', sans-serif; font-size: 2em;">Skills</h2>
+        <div class="skills-box" style="background-color: white;border: 1px solid;padding: 10px; overflow-y: scroll; height: 60vh; width: 70vw;">
+            <div class="skills-items">
+                <h4 style="font-family: 'Nourd-Heavy', sans-serif; font-size: 1.2em; padding-left: 30px;">Courses:</h4>
+                <ul style="display: flex; flex-direction: column; gap: 5px;">
+                    @for (course of courses; track course.id) {
+                        <div class="course-item" style="border: 1px solid; display: flex; align-items: center; flex-direction: row; justify-content: space-between; padding-left: 10px; padding-right: 10px;">{{formatDate(course.date)}}<p style="margin-bottom: 10px;">{{course.name}}<span style="color: grey;"> {{course.location}} {{course.author}}</span></p>
+                        @if (course.status == 'done') {
+                            <a style="color: green;">{{course.status}}</a>
+                        } @else {
+                            <a>{{course.status}}</a>
+                        }
+                        </div>
+                    }
+                </ul>
+
+            </div>
+
+            <div class="certificates">
+
+            </div>
+        </div>
+    </div>
+
+</div>

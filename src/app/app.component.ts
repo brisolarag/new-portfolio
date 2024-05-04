@@ -7,6 +7,7 @@ import { AboutmeComponent } from './pages/aboutme/aboutme.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectsService } from './services/allProjects';
+import { SkillsComponent } from './pages/skills/skills.component';
 
 
 
@@ -20,7 +21,8 @@ import { ProjectsService } from './services/allProjects';
     HomeComponent,
     AboutmeComponent,
     ExperiencesComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    SkillsComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: 
