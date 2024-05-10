@@ -27,3 +27,31 @@ body {
     font-family: 'Nourd-Regular', sans-serif;
     overflow-x: hidden;
 }
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Estilos adicionais para customização do scroll */
+  /* Por exemplo, você pode adicionar uma cor de fundo, uma sombra ou bordas */
+  body {
+    background-color: #f0f0f0; /* Cor de fundo */
+  }
+  
+  /* Estilo para a barra de rolagem */
+  /* Aqui você pode personalizar a aparência da barra de rolagem */
+  ::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor do polegar da barra de rolagem */
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor do polegar da barra de rolagem ao passar o mouse */
+  }

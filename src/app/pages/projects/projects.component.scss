@@ -29,15 +29,5 @@
     flex-wrap: wrap;
     gap: 10px;
     overflow-y: scroll;
-}
-
-.project {
-    display: block;
-    min-width: 250px;
-    max-width: 250px;
-    min-height: 250px;
-    max-height: 250px;
-    overflow-y: scroll;
-    border: 1px solid;
-    padding: 10px;
+    overflow-x: hidden;
 }

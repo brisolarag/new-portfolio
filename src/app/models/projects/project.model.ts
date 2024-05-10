@@ -1,7 +1,8 @@
 export interface Project {
-    id?: number;
+    id: number;
     date: string;
     name: string;
     desc: string;
     link: string;
+    status:number
 }

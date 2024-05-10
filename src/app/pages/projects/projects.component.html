@@ -2,15 +2,77 @@
 
     <div class="projects-content">
         <h2 style="font-family: 'Nourd-Heavy', sans-serif; font-size: 2em;">Projects</h2>
-        <div class="projects-box" style="background-color: white;border: 1px solid;padding: 10px;">
+        <div class="projects-box" style="
+        background-color: white;
+        border: 1px solid;
+        padding: 10px;
+        ">
             
             @for (project of projects; track project.id) {
-                <div class="project">
-                    <p style="margin: 0;">{{formatDate(project.date)}}</p>
-                    <p><a style="font-weight: bolder;margin-top: 0;text-decoration: none;" target="_blank" href={{project.link}}>{{project.name}}</a></p>
-                    <p>{{project.desc}}</p>
-                    <p>{{project.link}}</p>
-                </div>
+
+                @if (project.status == 0) {
+
+                    <div class="project" style=
+                    "
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    border: 1px solid;
+                    padding: 10px;
+                    ">
+                        <div class="project-title" style=
+                        "
+                        display: flex;
+                        width: 100%;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        ">
+                            <div class="project-title-date" style="font-weight: bolder;">{{formatDate(project.date)}}</div>
+
+                            <div class="project-title-title" style="color: red; font-weight: bolder;">{{project.name}}</div>
+
+
+                            <div class="project-title-btn" (click)="toggleStatus(project.id)"><i class="bi bi-caret-left-fill"></i></div>
+                        </div>
+
+                        <div class="project-desc" style="display: none;">
+                            <p>{{project.desc}}</p>
+                        </div>
+    
+    
+                    </div>
+
+                } @else {
+                    <div class="project" style=
+                    "
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    border: 1px solid;
+                    padding: 10px;
+                    ">
+                        <div class="project-title" style=
+                        "
+                        display: flex;
+                        width: 100%;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        ">
+                            <div class="project-title-date" style="font-weight: bolder;">{{formatDate(project.date)}}</div>
+
+                            <div class="project-title-title" style="color: red; font-weight: bolder;">{{project.name}}</div>
+
+
+                            <div class="project-title-btn" (click)="toggleStatus(project.id)"><i class="bi bi-caret-down-fill"></i></div>
+                        </div>
+
+                        <div class="project-desc">
+                            <p>{{project.desc}}</p>
+                        </div>
+    
+    
+                    </div>
+                }
             }
 
         </div>

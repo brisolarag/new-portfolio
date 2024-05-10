@@ -35,5 +35,16 @@ export class ProjectsComponent {
     const year = date.getFullYear().toString();
     return `${month}/${year}`;
   }
-  
+
+
+  toggleStatus(itemId: number): void {
+    this.projects = this.projects.map(project => {
+      if (project.id === itemId) {
+        return { ...project, status: project.status === 0 ? 1 : 0 };
+      }
+      return project;
+    });
+  }
 }
+  
+
