@@ -1,0 +1,56 @@
+[
+    {
+        "id": 0,
+        "name": "C#",
+        "level": 4,
+        "items": 0
+    },
+    {
+        "id": 1,
+        "name": "Java",
+        "level": 3,
+        "items": 0
+    },
+    {
+        "id": 2,
+        "name": "Javascript",
+        "level": 4,
+        "items": 0
+    },
+    {
+        "id": 3,
+        "name": "Typescript",
+        "level": 4,
+        "items": 0
+    },
+    {
+        "id": 4,
+        "name": "Python",
+        "level": 2,
+        "items": 0
+    },
+    {
+        "id": 5,
+        "name": "VBA",
+        "level": 1,
+        "items": 0
+    },
+    {
+        "id": 6,
+        "name": "Excel",
+        "level": 4,
+        "items": 0
+    },
+    {
+        "id": 7,
+        "name": "Docker",
+        "level": 4,
+        "items": 0
+    },
+    {
+        "id": 8,
+        "name": "Git",
+        "level": 4,
+        "items": 0
+    }
+]

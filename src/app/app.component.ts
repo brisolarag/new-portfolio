@@ -8,6 +8,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectsService } from './services/allProjects';
 import { SkillsComponent } from './pages/skills/skills.component';
+import { CommonModule, NgFor } from '@angular/common';
 
 
 

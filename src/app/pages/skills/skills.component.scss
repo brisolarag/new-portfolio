@@ -21,3 +21,10 @@
     align-items: center;
     justify-content: center;
 }
+
+
+@media (max-width: 450px) {
+    .tech-buttons button {
+      width: calc(50% - 20px);
+    }
+  }

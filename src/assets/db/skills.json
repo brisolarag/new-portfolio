@@ -1,0 +1,102 @@
+[
+    {
+        "id": 0,
+        "skill": "C#",
+        "level": 4
+    },
+    {
+        "id": 1,
+        "skill": "Java",
+        "level": 3
+    },
+    {
+        "id": 2,
+        "skill": "Javascript",
+        "level": 4
+    },
+    {
+        "id": 3,
+        "skill": "Typescript",
+        "level": 4
+    },
+    {
+        "id": 4,
+        "skill": "Python",
+        "level": 2
+    },
+    {
+        "id": 5,
+        "skill": "VBA",
+        "level": 1
+    },
+    {
+        "id": 6,
+        "skill": "Excel",
+        "level": 4
+    },
+    {
+        "id": 7,
+        "skill": "ASP.NET",
+        "level": 3
+    },
+    {
+        "id": 8,
+        "skill": ".NET MAUI",
+        "level": 1
+    },
+    {
+        "id": 9,
+        "skill": "EntityFramework Core (EF Core)",
+        "level": 3
+    },
+    {
+        "id": 10,
+        "skill": "MVC Razor",
+        "level": 1
+    },
+    {
+        "id": 11,
+        "skill": "SQL Server",
+        "level": 3
+    },
+    {
+        "id": 12,
+        "skill": "PostgreSQL",
+        "level": 3
+    },
+    {
+        "id": 13,
+        "skill": "OracleSQL",
+        "level": 4
+    },
+    {
+        "id": 14,
+        "skill": "SQLite",
+        "level": 5
+    },
+    {
+        "id": 15,
+        "skill": "MongoDB",
+        "level": 2
+    },
+    {
+        "id": 16,
+        "skill": "Angular",
+        "level": 4
+    },
+    {
+        "id": 17,
+        "skill": "React",
+        "level": 4
+    },
+    {
+        "id": 18,
+        "skill": "Docker",
+        "level": 4
+    },
+    {
+        "id": 19,
+        "skill": "Git",
+        "level": 4
+    }
+]

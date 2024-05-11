@@ -23,8 +23,10 @@
 }
 
 .exps-items {
-    width: 80vw;
+    width: 70vw;
     height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .exp-item {

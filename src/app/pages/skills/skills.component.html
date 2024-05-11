@@ -11,47 +11,112 @@
         overflow-y: scroll;
          height: 60vh; 
          width: 70vw;
+         position: relative;
          ">
 
-            <div class="skills-items">
-                <h4 style="
-                    font-family: 'Nourd-Heavy', sans-serif;
-                     font-size: 1.2em;
-                      padding-left: 30px;
-                      ">
-                      Courses:</h4>
+         @if (idView == -99) {
+             
+            <h5 style="position: absolute; bottom: 10px; right: 10px;">{{coursesQtd}} courses total</h5>
+    
+            <div class="tech-buttons" style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px; 
+            flex-wrap: wrap;
+            ">
+    
+    
+                         
+    
+                @for (sc of scs; track sc.id) {
+                    <button class="tech-item" style=
+                        "
+                        display: flex;
+                        padding-top: 10px;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        height: 150px; 
+                        width: 150px; 
+                        border: none; 
+                        "
+                        (click)="setView(sc.id)"
+                        >
+                        <h5 style="font-weight: bolder; font-size: 1rem;">{{sc.name.toLocaleUpperCase()}}</h5>
+                        <p style="font-size: 0.7rem;">click to see all courses</p>
+                        <div class="stars">
+                            @for (item of generateArray(sc.level); track $index) {
+                                <i class="bi bi-star-fill"></i>
+                            }
+                        </div>
+                        <p style="font-size: 0.7rem;">COURSES: <span style="color: red;">{{sc.courses.length}}</span></p>
+                    </button>
+                }
+            </div>
+         } @else {
+            
+            <div class="viewing-content"
+            style="display: grid; 
+            grid-template-rows: auto 1fr;
+            width: 100%; 
+            height: 100%; 
+            gap: 20px;"
+            >
 
-                <ul style="
+                <div class="viewing-header" style="width: 100%; display: flex; flex-direction: row; justify-content: space-between;" >
+                    <button type="button" class="btn btn-danger" (click)="viewAll()">BACK</button>
+                    <h5 style="font-weight: bolder; color: red;">{{scs[idView].name.toLocaleUpperCase()}}</h5>
+                    <div class="stars-header">
+                        @for (item of generateArray(scs[idView].level); track $index) {
+                            <i class="bi bi-star-fill" style="color: red;"></i>
+                        }
+                    </div>
+
+                </div>
+
+
+                <div class="viwing-content" style=
+                "width: 100%; 
                 display: flex; 
                 flex-direction: column;
-                 gap: 5px;
-                 ">
-                    @for (course of courses; track course.id) {
-                        <div class="course-item" style=
-                        "
-                        border: 1px solid; 
-                        display: flex;
-                         align-items: center;
-                          flex-direction: row; 
-                          justify-content: space-between;
-                          padding-left: 10px;
-                          padding-right: 10px;
-                            ">{{formatDate(course.date)}}<p>{{course.name}}<span style="color: grey;"> {{course.location}} {{course.author}}</span></p>
-                        @if (course.status == 'done') {
-                            <a style="color: green;">{{course.status}}</a>
-                        } @else {
-                            <a>{{course.status}}</a>
-                        }
+                gap: 50px;
+                overflow-y: scroll;">
+
+
+                    @for (course of scs[idView].courses; track course.id) {
+                        <div style="width: 100%; background-color: white; position: relative;
+                        padding: 10px;background-color: #f0f0f0;
+                        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+                        ">
+
+                            <div  style="display: flex; justify-content: space-between; align-items: center;" class="course-content">
+                                <h6 style="font-weight: bolder;">{{course.name.toLocaleUpperCase()}}</h6>
+                                <p>{{formatDate(course.date)}}</p>
+                            </div>
+
+                            <div class="course-location-status" style="display: flex; justify-content: space-between;">
+                                <p>{{course.location}} <span>{{course.author}}</span></p>
+                                @if (course.status == 'done') {
+                                    <p style="color: green; font-weight: bolder;">{{course.status.toLocaleUpperCase()}}</p>
+                                } @else {
+                                    <p style="font-weight: bolder;">{{course.status.toLocaleUpperCase()}}</p>
+                                }
+                            </div>
                         </div>
                     }
-                </ul>
+
+                </div>
 
             </div>
 
-            <div class="certificates">
                 
-            </div>
-        </div>
+         }
+
+
+            
     </div>
+
+    
+    
 
 </div>
